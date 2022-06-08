@@ -27,21 +27,30 @@ I just added a loop in the main.
 For this project we will use Aiven instances, like Kafka, and PostgreSQL but feel free to configure all you need
 by the following:
 
-1. Prepare the list of Urls you want to track. Go to resources/urls.json and add there the list of them, by default
+-----
+Requirements
+-----
+This are the following technical requirements you would need
+
+    * PostgreSQL Instance
+    * Kafka Instance
+    * Python
+
+Prepare the list of Urls you want to track. Go to resources/urls.json and add there the list of them, by default
 the project comes with some examples (you can skip this part).
 For example:
 ..code:: json
     "websitename": "https://YOURURL/"
 
-2. Creates a Virtualenv
+Add your certs files into certs folder for your external services like Kafka and PostgreSQL (.pem,cert,key)
+
+Creates a Virtualenv
     make virtualenv
 
-3. Setup the project
+Setup the project
     make setup
 
-4. Add your certs files into certs folder (.pem,cert,key)
-
-5. Update the new config.ini prepared by the setup and configure your parameters
+Update the new config.ini prepared by the setup and configure your parameters
     You will need: (absolute path)
         - virtualenv
         - Database instance
@@ -49,27 +58,13 @@ For example:
         - URL of a Json file with your websites to check
         - Path for your logging files
 
-6. Run your code
+Run your code
     make run
 
-7. Outcome - Your outcome should be similar to the one below
+Outcome - Your outcome should be similar to the one below
 
 .. image:: webster/resources/outcome_example.png
 
------
-Requirements
------
-    * PostgreSQL Instance
-    * Kafka Instance
-    * Python3.8
-    Python Libraries
-        * setuptools
-        * psycopg2-binary
-        * kafka-python
-        * requests
-        * tabulate
-Note: It is really important you have upgraded version for  python3-setuptools
-sudo apt-get install python3-setuptools
 
 ----
 Troubleshooting
