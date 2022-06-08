@@ -39,15 +39,24 @@ This are the following technical requirements you would need
 Prepare the list of Urls you want to track. Go to resources/urls.json and add there the list of them, by default
 the project comes with some examples (you can skip this part).
 For example:
-..code:: json
-    "websitename": "https://YOURURL/"
+..code:: json::
+
+    {
+        "urls": [
+                {
+                    "website": "https://URLTOCHECK"
+                }
+            ]
+    }
 
 Add your certs files into certs folder for your external services like Kafka and PostgreSQL (.pem,cert,key)
 
-Creates a Virtualenv
+Creates a Virtualenv::
+
     make virtualenv
 
-Setup the project
+Setup the project::
+
     make setup
 
 Update the new config.ini prepared by the setup and configure your parameters
@@ -58,7 +67,8 @@ Update the new config.ini prepared by the setup and configure your parameters
         - URL of a Json file with your websites to check
         - Path for your logging files
 
-Run your code
+Run your code::
+
     make run
 
 Outcome - Your outcome should be similar to the one below
@@ -85,6 +95,7 @@ Attributions
 https://developer.aiven.io/
 https://kafka-python.readthedocs.io/
 https://realpython.com
+
 
 -----
 Contributions
