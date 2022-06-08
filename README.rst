@@ -31,16 +31,8 @@ by the following:
 the project comes with some examples (you can skip this part).
 For example:
 ..code:: json
-    {
-        "urls": [
-            {
-                "metro": "https://YOURURL/"
-            },
-            {
-                "aiven": "https://aiven.io/"
-            }
-        ]
-    }
+    "websitename": "https://YOURURL/"
+
 2. Creates a Virtualenv
     make virtualenv
 
