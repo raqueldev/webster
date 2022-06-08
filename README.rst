@@ -51,6 +51,10 @@ For example:
 
 Add your certs files into certs folder for your external services like Kafka and PostgreSQL (.pem,cert,key)
 
+Certs::
+
+    certs/ADDYOURCERTS
+
 Creates a Virtualenv::
 
     make virtualenv
@@ -59,13 +63,22 @@ Setup the project::
 
     make setup
 
-Update the new config.ini prepared by the setup and configure your parameters
-    You will need: (absolute path)
-        - virtualenv
-        - Database instance
-        - Kafka instance
-        - URL of a Json file with your websites to check
-        - Path for your logging files
+Update the new config.ini prepared by the setup and configure your parameters::
+
+    You will need: (i.e /home/USER/PycharmProjects/webster-project/webster/certs/ca.pem)
+        [database]
+        service_uri=
+        [kafka]
+        service_uri_ssl=
+        ssl_cafile=
+        ssl_keyfile=
+        ssl_certfile=
+        topic=
+        [urlsJson]
+        path=
+        [logging]
+        path=
+        path_errors=
 
 Run your code::
 
