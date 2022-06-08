@@ -2,7 +2,7 @@
 Webster - Website Test Response
 =======
 
-.. image:: resources/webster.png
+.. image:: webster/resources/webster.png
 Author: Raquel V
 
 **Disclaimer**
@@ -61,7 +61,7 @@ For example:
 
 7. Outcome - Your outcome should be similar to the one below
 
-.. image:: resources/outcome_example.png
+.. image:: webster/resources/outcome_example.png
 
 -----
 Requirements
