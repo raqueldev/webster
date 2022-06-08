@@ -1,0 +1,10 @@
+*.ini
+/logs/
+/venv/
+/.venv/
+*.log
+/webster/certs/ca.pem
+/webster/certs/service.cert
+/webster/certs/service.key
+.idea
+webster/__pycache__/

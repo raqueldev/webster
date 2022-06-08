@@ -1,0 +1,13 @@
+[database]
+service_uri=
+[kafka]
+service_uri_ssl=
+ssl_cafile=
+ssl_keyfile=
+ssl_certfile=
+topic=
+[urlsJson]
+path=
+[logging]
+path=
+path_errors=
