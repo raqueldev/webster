@@ -30,15 +30,17 @@ by the following:
 1. Prepare the list of Urls you want to track. Go to resources/urls.json and add there the list of them, by default
 the project comes with some examples (you can skip this part).
 For example:
-"urls": [
+..code:: json
     {
-        "metro": "https://YOURURL/"
-    },
-    {
-        "aiven": "https://aiven.io/"
+        "urls": [
+            {
+                "metro": "https://YOURURL/"
+            },
+            {
+                "aiven": "https://aiven.io/"
+            }
+        ]
     }
-]
-
 2. Creates a Virtualenv
     make virtualenv
 
