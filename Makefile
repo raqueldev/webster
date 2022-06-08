@@ -12,7 +12,7 @@ virtualenv:
 setup:
 	$(PIP) install --upgrade pip
 	$(PIP) install -r requirements.txt
-	[[ -f webster/logs/webster.log ]] || touch webster/logs/webster.log && touch webster/logs/webster_error.log
+	mkdir "webster/logs" && [[ -f webster/logs/webster.log ]] || touch webster/logs/webster.log && touch webster/logs/webster_error.log
 	[[ -f webster/config/config.ini ]] || cp webster/config/config.ini.dist webster/config/config.ini
 	@echo '**********************************************'
 	@echo 'Installation has been done. '
